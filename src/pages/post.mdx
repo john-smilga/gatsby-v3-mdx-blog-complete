@@ -1,0 +1,159 @@
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo, Video } from '../components/Complete'
+
+import { Link } from 'gatsby'
+
+<section className="mdx-page">
+
+_I'm baby humblebrag neutra taiyaki af vice bespoke locavore fanny pack_ ramps vexillologist succulents. Normcore etsy pour-over adaptogen skateboard fashion axe, bushwick food truck beard lumbersexual master cleanse actually deep v. **Retro cardigan raw denim franzen kickstarter you probably haven't heard of them literally** aesthetic snackwave four dollar toast. Keffiyeh synth umami, helvetica yr flexitarian jean shorts banh mi cardigan leggings letterpress paleo intelligentsia narwhal.
+
+# Gatsby MDX
+
+### Random Heading
+
+## More Examples
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+
+ </div>
+
+<div className="nice-text">
+
+### Nice Text
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas pok pok vape beard umami. Poutine plaid before they sold out cronut messenger bag, echo park hexagon tumblr +1 quinoa mumblecore paleo. Activated charcoal drinking vinegar VHS gentrify put a bird on it tousled.
+
+</div>
+
+## React Components
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+## Videos
+
+<RegVideo />
+<Video />
+
+<h2>regular heading</h2>
+<h2> nice title </h2>
+
+<h4>inline code</h4>
+
+`console.log('hello there')`
+
+<h4> blockquote element </h4>
+
+<blockquote display="default">
+  I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas
+</blockquote>
+
+<blockquote display="info">
+  I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas
+</blockquote>
+
+<blockquote display="warning">
+  I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas
+</blockquote>
+
+<blockquote>
+  I'm baby gluten-free lo-fi tumblr, bicycle rights edison bulb green juice
+  ennui next level viral jean shorts. Food truck godard street art migas fixie
+  shaman paleo chia single-origin coffee poke pug portland flannel.
+</blockquote>
+
+> hello there
+
+#### Javascript
+
+```js
+// comments
+const name = 'john'
+const channel = 'coding addict'
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
+}
+featuredProducts()
+```
+
+#### JSX
+
+```jsx
+import React from 'react'
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+#### HTML
+
+```html
+<h1>hello world</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
+</section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
+
+<article>this is aside</article>
+
+<Link to="/posts" className="btn center-btn">all posts</Link>
+</section>
