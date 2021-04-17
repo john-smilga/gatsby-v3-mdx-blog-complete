@@ -1,7 +1,6 @@
 import React from 'react'
 import SocialLinks from '../../constants/socialLinks'
 import { StaticImage } from 'gatsby-plugin-image'
-import { graphql, useStaticQuery } from 'gatsby'
 import Title from './Title'
 import styled from 'styled-components'
 
