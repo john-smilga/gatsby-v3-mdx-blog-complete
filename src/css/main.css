@@ -365,7 +365,7 @@ Hero
   background-size: cover;
 }
 .hero-person {
-  display: none;
+  display: none !important;
 }
 @media screen and (min-width: 800px) {
   .hero {
