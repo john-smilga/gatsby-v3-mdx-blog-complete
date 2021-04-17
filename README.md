@@ -150,15 +150,3 @@ npm install --save prism-react-renderer
    props.children.props.className
    className.replace(/language-/,'')
 3. theme
-
-### Favicon
-
-Favicon
-
-[favicon] : https://favicon.io/
-
-/static/favicon.ico
-
-### SEO
-
-[Gatsby Example] : https://www.gatsbyjs.org/docs/add-seo-component/
