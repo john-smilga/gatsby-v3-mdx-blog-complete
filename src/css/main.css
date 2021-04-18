@@ -374,7 +374,7 @@ Hero
   .hero-person {
     width: 20rem;
     height: 20rem;
-    display: block;
+    display: block !important;
     position: absolute;
     bottom: 0;
     left: 60%;
